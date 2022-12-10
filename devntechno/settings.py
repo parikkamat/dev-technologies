@@ -127,12 +127,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #static module
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-# ]
-import os
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+# import os
 
-STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+# STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 #Activate Django Heroku
