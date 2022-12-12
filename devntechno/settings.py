@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-%@zvn_q7fp-9gz#_cv2n!t&(xob5ujdg%s-rt0729@&lqj(7+&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
-# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -123,18 +123,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-
-#static module
-
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-# ]
-
-# STATIC_ROOT = BASE_DIR / "staticfiles"
+#Static work
 import os
 
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-
-#Activate Django Heroku
